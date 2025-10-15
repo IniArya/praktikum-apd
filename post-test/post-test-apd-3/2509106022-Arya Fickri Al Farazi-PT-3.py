@@ -9,7 +9,7 @@ def hitung_harga(jenis):
 print ("Daftar barang: ")
 print ("1. sampo - Rp25.000")
 print ("2. sabun mandi - Rp18.000")
-print ("1. pasta gigi - Rp9.000")
+print ("3. pasta gigi - Rp9.000")
 
 member = input("Apakah anda member ? (ya/tidak): ").lower()
 
@@ -17,7 +17,7 @@ if member == "ya":
     login_status = login()
     print(f"Login {'berhasil' if login_status else 'gagal'}")
     if login_status:
-        jenis_barang = input("pilih barang (sampo/sabun mandi/pasta gigi): ").lower()
+        jenis_barang = input("Pilih barang (sampo/sabun mandi/pasta gigi): ").lower()
         total_harga = hitung_harga(jenis_barang)
         if total_harga == 0:
             print("barang tidak tersedia")
