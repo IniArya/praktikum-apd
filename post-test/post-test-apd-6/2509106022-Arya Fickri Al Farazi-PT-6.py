@@ -131,7 +131,7 @@ def main_menu():
                 delete_transaksi(int(input("ID: ")))
             elif pilihan == '5' and role == 'admin':
                 print("Anda telah logout.")
-                role = None  # Logout
+                role = None
             else:
                 print("Pilihan tidak valid.")
             
